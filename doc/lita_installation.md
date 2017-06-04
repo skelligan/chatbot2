@@ -35,6 +35,9 @@ Falls dabei eine Fehlermeldung bezüglich NFS support erscheint, müssen zuvor z
 sudo apt install nfs-common nfs-kernel-server
 ```
 [siehe dazu folgendes vagrant ticket](https://github.com/mitchellh/vagrant/issues/1534)
+Falls unter Windows die Meldung "no synced folder implementation..." erscheint:
+$ vagrant plugin install vagrant-winnfsd
+ausführen.
 
 Dann können wir mit `vagrant ssh` in die VM gehen und mit  dem Befehl  `lita-dev` die Umgebung starten.
 
